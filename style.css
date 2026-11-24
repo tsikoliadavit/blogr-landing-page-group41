@@ -1,5 +1,3 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"); */
-
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +11,7 @@ html {
 body {
   min-height: 100vh;
   line-height: 1.5;
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 header {
@@ -28,12 +26,6 @@ header {
   border-end-start-radius: 100px;
   position: relative;
   overflow: hidden;
-}
-
-.bg-header {
-  max-width: 100%;
-  bottom: 0;
-  position: absolute;
 }
 
 nav {
@@ -155,8 +147,8 @@ li a:hover {
   background-color: white;
   border: none;
   color: #ff505c;
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
 }
 
 .hero div :first-child:hover {
@@ -184,16 +176,16 @@ li a:hover {
 main {
   max-width: 1440px;
   margin-inline: auto;
+  overflow-x: hidden;
 }
 
-.designe {
-  /* background-color: crimson; */
+.design {
   margin-top: 150px;
+  /* background-color: aquamarine; */
   padding-left: 165px;
-  height: 822px;
 }
 
-.designe > h2 {
+.design > h2 {
   text-align: center;
   color: #1f3e5a;
   font-size: 40px;
@@ -201,11 +193,11 @@ main {
   margin-bottom: 93px;
 }
 
-.designe > div {
-  /* background-color: teal; */
+.design > div {
+  /* background-color: yellow; */
   padding: 20px;
   display: flex;
-  height: 822px;
+  align-items: center;
 }
 
 .content {
@@ -234,18 +226,62 @@ main {
 }
 
 .cover {
-  /* background-color: darkviolet; */
+  /* background-color: tomato; */
   padding: 20px;
   width: 50%;
   position: relative;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  height: 882px;
 }
 
 .cover :first-child {
   position: absolute;
+  height: 100%;
 }
 
 .cover :last-child {
   position: absolute;
+  height: 100%;
+}
+
+.state {
+  height: 400px;
+  background-color: #393a57;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  margin-block: 57px 116px;
+  background-image: url(./images/bg-pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-position-y: -500px;
+  background-position-x: -200px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 165px;
+  position: relative;
+}
+
+.state img {
+  position: absolute;
+  z-index: 1;
+  left: 150px;
+  bottom: -110px;
+}
+
+.state div {
+  color: white;
+  max-width: 540px;
+}
+
+.state div h2 {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -1.2px;
+  margin-bottom: 5px;
+}
+
+.state div p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.5px;
 }
