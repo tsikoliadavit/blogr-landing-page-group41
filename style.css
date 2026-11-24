@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +14,7 @@ html {
 body {
   min-height: 100vh;
   line-height: 1.5;
-  font-family: Arial, sans-serif;
+  font-family: "overpass", sans-serif;
 }
 
 header {
@@ -85,6 +88,10 @@ li a:hover {
   background-color: #ff7b86;
   cursor: pointer;
   color: white;
+}
+
+.hamburger {
+  display: none;
 }
 
 .drop-down-box {
@@ -284,4 +291,127 @@ main {
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 0.5px;
+}
+
+.free-open {
+  height: 880px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 165px;
+  align-items: center;
+  position: relative;
+}
+
+.free-open .laptop {
+  position: absolute;
+  z-index: 1;
+  height: 786px;
+  left: -275px;
+}
+
+.free-open div {
+  max-width: 540px;
+}
+
+.free-open h3 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #1f3e5a;
+  margin-bottom: 16px;
+}
+
+.free-open p {
+  color: #4c5862;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+}
+
+.free-open div :nth-child(2) {
+  margin-bottom: 64px;
+}
+
+footer {
+  max-width: 1440px;
+  min-height: 359px;
+  background-color: #24242c;
+  border-top-right-radius: 100px;
+  padding: 70px 165px;
+  color: #c8c8ca;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-inline: auto;
+  font-family: "ubuntu";
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer ul :first-child {
+  color: white;
+  font-weight: 700;
+  margin-bottom: 11px;
+}
+
+@media (max-width: 700px) {
+  header {
+    width: 375px;
+    padding: 56px 24px 156px;
+  }
+
+  nav {
+    margin-bottom: 108px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .nav-buttons {
+    display: none;
+  }
+
+  .hamburger {
+    display: inline-block;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+    font-weight: 600;
+    width: 300px;
+    margin-inline: auto;
+  }
+
+  .design {
+    padding: 100px 24px;
+  }
+
+  .design div {
+    flex-direction: column-reverse;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .cover {
+    width: 100%;
+  }
+
+  .cover :first-child {
+    display: none;
+  }
+
+  .cover :last-child {
+    width: 326px;
+  }
 }
